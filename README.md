@@ -44,8 +44,6 @@ An advance level google meet bot which will attend classes on desktop just by se
    python3 manage.py runserver
    ```
 
-4. Finally, enter the link in the web app :
-
-   ![](/home/aman/Pictures/Screenshot from 2020-08-10 17-14-13.png)
+4. Finally, enter the link in the web app 
 
    
