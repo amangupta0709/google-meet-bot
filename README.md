@@ -1,6 +1,20 @@
 # Google Meet Bot
 
 An advance level google meet bot which will attend classes on desktop just by sending a link via phone through its web app. It will leave the classes when students are less than 30-40 in a lecture. Also it will simultaneously record the classes and prevent us from leaving the classes by reconnecting till the class end.
+### Setup with Docker & Docker-compose
+
+1. Make sure you have [Docker](https://docs.docker.com/get-docker/) and [Docker-Compose](https://docs.docker.com/compose/install/) installed.
+
+    ```shell script
+    docker --version
+    docker-compose --version
+    ```
+
+2. Bring up the docker container in the background
+    
+    ```shell script
+   docker-compose up -d
+    ```
 
 ### Setup the environment (linux)
 
@@ -46,4 +60,3 @@ An advance level google meet bot which will attend classes on desktop just by se
 
 4. Finally, enter the link in the web app 
 
-   
