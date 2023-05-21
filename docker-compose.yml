@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
       context: .
     ports:
-      - 8000
+      - 8000:8000
     environment:
       DEBUG: 1
       SECRET_KEY: '2rwns^_yyzwtv*x7h(cw#+jx#k0-9v)o+&l2p@l1c*f9mb*#&q'
