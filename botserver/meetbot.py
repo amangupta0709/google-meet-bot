@@ -7,7 +7,7 @@ from selenium.webdriver.common.keys import Keys
 
 meetlink = sys.argv[1]
 min_record_time = 200
-min_members = 40
+min_members = int(input("Maximum amount of people in the meeting required to leave: "))
 
 
 options = webdriver.ChromeOptions()
