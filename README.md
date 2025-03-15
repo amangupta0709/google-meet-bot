@@ -1,6 +1,9 @@
 # Google Meet Bot
 
-An advance level google meet bot which will attend classes on desktop just by sending a link via phone through its web app. It will leave the classes when students are less than 30-40 in a lecture. Also it will simultaneously record the classes and prevent us from leaving the classes by reconnecting till the class end.
+An advance level [Google Meet](https://support.google.com/meet/?hl=en#topic=14074839) bot which can attend meetings on your desktop just by sending a link via phone through its web app. It will leave the meeting when there are an insufficient amount of students in a lecture. Also, it record the meetings while in them and prevents you from leaving by reconnecting.
+
+## Setup
+
 ### Setup with Docker & Docker-compose
 
 1. Make sure you have [Docker](https://docs.docker.com/get-docker/) and [Docker-Compose](https://docs.docker.com/compose/install/) installed.
@@ -60,3 +63,12 @@ An advance level google meet bot which will attend classes on desktop just by se
 
 4. Finally, enter the link in the web app 
 
+## Q&A
+
+- Where is the main part of the bot?
+
+  - It is a little deep, but it can be found under [botserver/meetbot.py](https://github.com/evjf/PR-google-meet-bot/blob/master/botserver/meetbot.py.). Make sure to check other places, as they have the other pieces of information.
+
+- How do I ask more questions?
+
+  - You can create an issue with the title having "Question: " in it.
