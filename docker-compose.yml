@@ -1,13 +1,17 @@
-version: '3.8'
+version: "3.8"
 
 services:
   bot:
     build:
-      dockerfile: Dockerfile
       context: .
+      dockerfile: Dockerfile
+    container_name: google-meet-bot
     ports:
-      - 8000:8000
+      - "8000:8000"
     environment:
-      DEBUG: 1
-      SECRET_KEY: '2rwns^_yyzwtv*x7h(cw#+jx#k0-9v)o+&l2p@l1c*f9mb*#&q'
-
+      DEBUG: "1"
+      SECRET_KEY: "2rwns^_yyzwtv*x7h(cw#+jx#k0-9v)o+&l2p@l1c*f9mb*#&q"
+      DJANGO_ALLOWED_HOSTS: "localhost 127.0.0.1 [::1]"
+    volumes:
+      - .:/var/app
+    command: python manage.py runserver 0.0.0.0:8000
